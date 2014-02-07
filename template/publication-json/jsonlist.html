@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>JSON Sample</title>
+</head>
+<body>
+    <div id="placeholder"></div>
+    <script src="js/jquery-1.7.1.min.js"></script>
+    <script>
+  $.getJSON('data/data.json', function(data) {
+        var output="<ul>";
+        for (var i in data.users) {
+            output+="<li>" + "<a href='" + data.users[i].link + " '> " + data.users[i].firstName + "</a>" + " " + data.users[i].lastName + "--" + data.users[i].joined.month+"</li>";
+        }
+
+        output+="</ul>";
+        document.getElementById("placeholder").innerHTML=output;
+  });
+    </script>
+</body>
+</html>
