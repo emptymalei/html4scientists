@@ -53,6 +53,22 @@
     <!-- Javascript -->
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/kickstart.js"></script>
+
+    <!-- Mathjax: render latex math on this page. \(\alpha\) for inline and \[  \] for display math -->
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            tex2jax: {
+                inlineMath: [
+                    ['\\(', '\\)']
+                ]
+            },
+            showProcessingMessages: false,
+            messageStyle: "none"
+        });
+    </script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+
 </head>
 
 <body>
@@ -124,14 +140,15 @@
 
             <!-- A Note Area for alerts or promotion -->
 
-            <div class="notice promo">
+
+            <div class="notice promo center">
                 <!-- The following i tag will show a bell, as a sign of notice -->
                 <i class="icon-bell icon-large"></i>
-
                 <!-- Add notice here -->
-                My new book ..... on amazon ...
-
+                <a href="http://www.cambridge.org/knowledge/discountpromotion?code=L2PMKC" style="text-decoration:none;">
+                    <i>Physical Mathematics</i> is for sale at only $68.</a>
             </div>
+
 
 
             <!-- HR divider -->
@@ -142,168 +159,329 @@
 
 
 
-            <h3 class="center">2014 Spring</h3>
+            <h3 class="center">Videos of Lectures</h3>
 
             <!-- Divider -->
             <hr class="damp" />
 
 
 
-            <h4 class="center">
-                Physics 137
-            </h4>
+            <!--    ------------------------------------------------------   -->
 
+            <!-- Tabs Center -->
 
-            <div class="notice promo">
-                <i class="icon-bell icon-large"></i>Homework due .....</div>
+            <!-- Add a new li line to add new tabs, correspondingly, add a div with the id name same as the href name to add contents to the new tab -->
 
-
-            <h6>Syllabus</h6>
-
-            <p>dahdahdah...</p>
-
-            <!-- Table Example -->
-
-            <h6>Course Schedule</h6>
-
-            <table cellspacing="0" cellpadding="0" class="sortable">
-                <thead>
-                    <tr>
-                        <th>Date</th>
-                        <th>Topic</th>
-                        <th>Reading</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th>Feb 14</th>
-                        <td>
-                            How to love
-                        </td>
-                        <td>
-                            Read your heart
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>Feb 15</th>
-                        <td>
-                            How to break up
-                        </td>
-                        <td>
-                            Read her/his heart
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+            <ul class="tabs center">
+                <li>
+                    <a href="#2014s">
+                        <i class="icon-play-circle"></i>2014 Spring</a>
+                </li>
+                <li>
+                    <a href="#2013f">
+                        <i class="icon-play-circle"></i>2013 Fall</a>
+                </li>
+                <li>
+                    <a href="#2009f">
+                        <i class="icon-play-circle"></i>2009 Fall</a>
+                </li>
+            </ul>
 
 
 
+            <!--    ------------------------------------------------------   -->
+
+            <!-- Begin of 2014 spring tab content -->
+
+            <div id="2014s" class="tab-content">
 
 
-            <!-- Divider -->
-            <hr class="alt2" style="margin:4em 0 4em 0" />
+                <h5 class="center">Videos of the lectures of the spring of 2014</h5>
+                <ul class="alt">
+                    <li>
+                        <a class="main" href="http://theory.phys.unm.edu/cahill/lecture01-012114.m4v">Lecture 1, sections 11.1-11.9</a>
+                    </li>
+                    <li>
+                        <a class="main" href="http://theory.phys.unm.edu/cahill/lecture02-012314.m4v">Lecture 2, sections 11.9-11.13</a>
+                    </li>
+                    <li>
+                        <a href="http://theory.phys.unm.edu/cahill/lecture03-012814.m4v">Lecture 3, sections 11.13-11.18</a>
+                    </li>
+                    <li>
+                        <a href="http://theory.phys.unm.edu/cahill/lecture03-012814.m4v">Lecture 4, sections 11.18-11.26</a>
+                    </li>
+                    <li>
+                        <a href="http://theory.phys.unm.edu/cahill/lecture05-020414.m4v">Lecture 5, sections 11.27-11.35</a>
+                    </li>
+
+                    <!--  ADD NEW LECTURE VIDEOS HERE -->
+
+                </ul>
+
+                <!-- Begin of comments area!! Remove or comment This area to disable comments -->
+                
+                <!-- Divider -->
+
+                <hr class="damp" />
+
+                <h6 class="center">Comments</h6>
+                
+                <!-- Disqus Code -->
+
+                <div id="disqus_thread"></div>
+                <script type="text/javascript">
+                    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+                    var disqus_shortname = 'physicalmathematics'; // required: replace example with your forum shortname
+
+                    /* * * DON'T EDIT BELOW THIS LINE * * */
+                    (function() {
+                        var dsq = document.createElement('script');
+                        dsq.type = 'text/javascript';
+                        dsq.async = true;
+                        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                    })();
+                </script>
+                <noscript>Please enable JavaScript to view the
+                    <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+                </noscript>
+
+                <!-- END of comments area!! Remove or comment This area to disable comments -->
 
 
-
-
-            <h4 class="center">
-                Physics @@@
-            </h4>
-
-
-            <div class="notice promo">
-                <i class="icon-bell icon-large"></i>Homework due .....</div>
-
-
-            <h6>Syllabus</h6>
-
-            <p>dahdahdah...</p>
-
-            <!-- Table Example -->
-
-            <h6>Course Schedule</h6>
-
-            <table cellspacing="0" cellpadding="0" class="sortable">
-                <thead>
-                    <tr>
-                        <th>Date</th>
-                        <th>Topic</th>
-                        <th>Reading</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th>Feb 14</th>
-                        <td>
-                            How to love
-                        </td>
-                        <td>
-                            Read your heart
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>Feb 15</th>
-                        <td>
-                            How to break up
-                        </td>
-                        <td>
-                            Read her/his heart
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-
-
-
-
-
-
-
-
-            <!-- Divider -->
-            <hr class="alt2" style="margin:4em 0 4em 0" />
-
-
-
-
-
-
-
-            <!-- HR divider -->
-            <div class="col_12">
-                <hr class="section" />
             </div>
 
 
-            <h3 class="center">Ealier Courses</h3>
 
-            <!-- Divider -->
-            <hr class="damp" />
+            <!-- End of 2014 spring tab content -->
 
 
 
-            <h4 class="center">
-                2013
-            </h4>
+            <!--    ------------------------------------------------------   -->
 
 
-            <h5>
-                <a href="#">Physics 137 @ 2013 Spring</a>
-            </h5>
+
+            <!-- Begin of 2013 fall tab content -->
+
+            <div id="2013f" class="tab-content">
+
+                <h5 class="center">Videos of the lectures of the fall of 2013</h5>
+
+                <ul class="alt">
+                    <li>
+                        <a class="main" href="http://theory.phys.unm.edu/cahill/lecture01-130820.m4v">Lecture 1</a>, sections 1.1-1.5</li>
+                    <li>Lecture 2
+                        <a class="main" href="http://theory.phys.unm.edu/466-13/lecture02-130822-1.m4v">Part 1</a>,
+                        <a class="main" href="http://theory.phys.unm.edu/466-13/lecture02-130822-2.m4v">Part 2</a>, sections 1.5-1.12</li>
+                    <li>
+                        <a class="main" href="http://theory.phys.unm.edu/cahill/lecture03-130827.m4v">Lecture 3</a>, sections 1.12-1.17</li>
+                    <li>
+                        <a class="main" href="http://theory.phys.unm.edu/cahill/lecture04-130829.m4v">Lecture 4</a>, sections 1.17-1.23</li>
+                    <li>
+                        <a class="main" href="http://theory.phys.unm.edu/cahill/lecture05-090313.m4v">Lecture 5</a>, sections 1.23-1.27</li>
+                    <li>
+                        <a class="main" href="http://theory.phys.unm.edu/cahill/lecture06-090513.m4v">Lecture 6</a>, sections 1.28-1.31</li>
+                    <li>
+                        <a class="main" href="http://theory.phys.unm.edu/cahill/lecture07-091013.m4v">Lecture 7</a>, sections 1.31-2.1</li>
+                    <li>
+                        <a class="main" href="http://theory.phys.unm.edu/cahill/lecture08-091213.m4v">Lecture 8</a>, sections 2.1-2.7</li>
+                    <li>
+                        <a class="main" href="http://theory.phys.unm.edu/cahill/lecture09-091713.m4v">Lecture 9</a>, sections 2.7-2.10</li>
+                    <li>
+                        <a class="main" href="http://theory.phys.unm.edu/cahill/lecture10-091913.m4v">Lecture 10</a>, sections 2.10-3.1</li>
+                    <li>
+                        <a class="main" href="http://theory.phys.unm.edu/cahill/lecture11-092413.m4v">Lecture 11</a>, sections 3.1-3.4</li>
+                    <li>
+                        <a class="main" href="http://theory.phys.unm.edu/cahill/lecture12-092613.m4v">Lecture 12</a>, sections 3.4-3.12</li>
+                    <li>
+                        <a class="main" href="http://theory.phys.unm.edu/cahill/lecture13-100113.m4v">Lecture 13</a>, sections 4.1-4.8</li>
+                    <li>
+                        <a class="main" href="http://theory.phys.unm.edu/cahill/lecture14-100313.m4v">Lecture 14</a>, sections 4.8-5.1</li>
+                    <li>
+                        <a class="main" href="http://theory.phys.unm.edu/cahill/lecture15-100813.m4v">Lecture 15</a>, sections 5.1-5.3</li>
+                    <li>
+                        <a class="main" href="http://theory.phys.unm.edu/cahill/lecture16-101513.m4v">Lecture 16</a>, sections 5.3-5.10</li>
+                    <li>
+                        <a class="main" href="http://theory.phys.unm.edu/cahill/lecture17-101713.m4v">Lecture 17</a>, sections 5.10-5.14</li>
+                    <li>
+                        <a class="main" href="http://theory.phys.unm.edu/cahill/lecture18-102213.m4v">Lecture 18</a>, sections 5.14-5.16</li>
+                    <li>
+                        <a class="main" href="http://theory.phys.unm.edu/cahill/lecture19-102413.m4v">Lecture 19</a>, sections 5.16-5.19</li>
+                    <li>
+                        <a class="main" href="http://theory.phys.unm.edu/cahill/lecture20-102913.m4v">Lecture 20</a>, sections 5.19-6.3</li>
+                    <li>
+                        <a class="main" href="http://theory.phys.unm.edu/cahill/lecture21-103113.m4v">Lecture 21</a>, sections 6.3-6.6</li>
+                    <li>
+                        <a class="main" href="http://theory.phys.unm.edu/cahill/lecture22-110513.m4v">Lecture 22</a>, sections 6.6-6.14</li>
+                    <li>
+                        <a class="main" href="http://theory.phys.unm.edu/cahill/lecture23-110713.m4v">Lecture 23,</a>sections 6.14-6.21</li>
+                    <li>
+                        <a class="main" href="http://theory.phys.unm.edu/cahill/lecture24-111213.m4v">Lecture 24,</a>sections 6.21-6.28</li>
+                    <li>
+                        <a class="main" href="http://theory.phys.unm.edu/cahill/lecture25-111413.m4v">Lecture 25,</a>sections 6.28-6.32</li>
+                    <li>
+                        <a class="main" href="http://theory.phys.unm.edu/cahill/lecture26-111913.m4v">Lecture 26,</a>sections 6.32-6.36</li>
+                    <li>
+                        <a class="main" href="http://theory.phys.unm.edu/cahill/lecture27-112113.m4v">Lecture 27,</a>sections 6.36-7.3 &amp; 7.5</li>
+                    <li>
+                        <a class="main" href="http://theory.phys.unm.edu/cahill/lecture28-112613.m4v">Lecture 28,</a>sections 8.1-8.9</li>
+                    <li>
+                        <a class="main" href="http://theory.phys.unm.edu/cahill/lecture29-120313.m4v">Lecture 29</a>, sections 8.9-9.1</li>
+                    <li>
+                        <a href="http://theory.phys.unm.edu/cahill/lecture30-121013.m4v">Lecture 30, section 9.1</a>
+                    </li>
+                    <li>
+                        <a href="http://theory.phys.unm.edu/cahill/lecture31-121213.m4v">Lecture 31, sections 9.1-9.2</a>
+                    </li>
+                </ul>
+
+
+
+                <hr class="damp" />
+
+                <!-- Disqus Code -->
+
+                <div id="disqus_thread"></div>
+                <script type="text/javascript">
+                    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+                    var disqus_shortname = 'physicalmathematics'; // required: replace example with your forum shortname
+
+                    /* * * DON'T EDIT BELOW THIS LINE * * */
+                    (function() {
+                        var dsq = document.createElement('script');
+                        dsq.type = 'text/javascript';
+                        dsq.async = true;
+                        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                    })();
+                </script>
+                <noscript>Please enable JavaScript to view the
+                    <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+                </noscript>
+
+
+            </div>
+
+            <!-- End of 2013 fall tab content -->
+
+
+
+
+            <!--    ------------------------------------------------------   -->
+
+
+            <!-- Begin of 2009 fall tab content -->
+
+            <div id="2009f" class="tab-content">
+
+
+                <h5 class="center">Here are some of the videos of the lectures of fall 2009</h5>
+                <ul class="alt">
+                    <li>
+                        <a class="main" href="http://theory.phys.unm.edu/466-09/lec1.wmv">Lecture 1</a>: linear algebra up to linear independence.</li>
+                    <li>
+                        <a class="main" href="http://theory.phys.unm.edu/466-09/082609.wmv">Lecture 2</a>: dimension of a vector space, inner and outer products, and Dirac notation.</li>
+                    <li>
+                        <a class="main" href="http://theory.phys.unm.edu/466-09/083109.wmv">Lecture 3</a>: laser demo on polarization vectors, identity operators, vectors and their components, linear operators and their matrix elements, determinants.
+                    </li>
+                    <li>
+                        <a class="main" href="http://theory.phys.unm.edu/466-09/090209.wmv">Lecture 4</a>: determinants, systems of linear equations, eigenvectors and eigenvalues, the adjoint of a linear operator, hermitian operators, unitary operators, anti-unitary and anti-linear operators, Wigner's theorem on symmetry in quantum mechanics, eigenvalues of a square matrix.</li>
+                    <li>
+                        <a class="main" href="http://theory.phys.unm.edu/466-09/090909.wmv">Lecture 5</a>: eigenvalues of a square matrix, functions of matrices, hermitian matrices.</li>
+                    <li>
+                        <a class="main" href="http://theory.phys.unm.edu/466-09/091409.wmv">Lecture 6</a>: hermitian matrices, normal matrices, determinant of a normal matrix, tricks with Dirac notation, compatible normal matrices.</li>
+                    <li>
+                        <a class="main" href="http://theory.phys.unm.edu/466-09/091609.wmv">Lecture 7</a>: compatible normal matrices, a matrix satisfies its characteristic equation, the singular-value decomposition.</li>
+                    <li>Lecture 8:
+                        <a class="main" href="http://theory.phys.unm.edu/466-09/092209.1.wmv">Part 1</a>
+                        <a class="main" href="http://theory.phys.unm.edu/466-09/092209.2.wmv">Part 2</a>: applications of the singular-value decomposition, LAPACK, the rank of a matrix, the tensor or direct product, density operators.</li>
+                    <li>
+                        <a class="main" href="http://theory.phys.unm.edu/466-09/092309.wmv">Lecture 9</a>: on tensor products, density operators, correlation functions, groups, and complex Fourier series.
+                    </li>
+                    <li>
+                        <a class="main" href="http://theory.phys.unm.edu/466-09/092809.wmv">Lecture 10</a>: on the Fourier series for \( \exp(-m |x|) \), real Fourier series, the Fourier series for x, complex and real Fourier series for an interval of length
+                        <span style="font-style: italic;">L</span>.</li>
+                    <li>
+                        <a class="main" href="http://theory.phys.unm.edu/466-09/093009.wmv">Lecture 11</a>: on Fourier series in several variables, the convergence of Fourier series, and quantum-mechanical examples.</li>
+                    <li>
+                        <a class="main" href="http://theory.phys.unm.edu/466-09/100509.wmv">Lecture 12</a>: on quantum-mechanical examples, the harmonic oscillator, non-relativistic strings, periodic boundary conditions, and the transition to the Fourier transform.</li>
+                    <li>
+                        <a class="main" href="http://theory.phys.unm.edu/466-09/100709.wmv">Lecture 13</a>: on the transition to the Fourier transform, the Fourier transform of a gaussian and of a real function, a representation of the delta-function, Parseval's identity, derivatives of a Fourier transform, and momentum and momentum space.
+                    </li>
+                    <li>
+                        <a class="main" href="http://theory.phys.unm.edu/466-09/101209.wmv">Lecture 14</a>: on the uncertainty principle, Fourier transforms in several variables, application to differential equations, Fick's law, and diffusion.</li>
+                    <li>
+                        <a class="main" href="http://theory.phys.unm.edu/466-09/101409.wmv">Lecture 15</a>: on the wave equation, diffusion, convolutions, Gauss's law, and the magnetic vector potential.
+                    </li>
+                    <li>
+                        <a class="main" href="http://theory.phys.unm.edu/466-09/101909.wmv">Lecture 16</a>: on the Fourier transform of a convolution, finding Green's functions, Laplace transforms, examples of Laplace transforms, how to measure the lifetime of a fluorophore, differentiation and integration of Laplace transforms, inverting Laplace transforms, convergence of infinite series, tests of convergence, series of functions, uniform convergence, the Riemann zeta function, and power series.
+                    </li>
+                    <li>
+                        <a class="main" href="http://theory.phys.unm.edu/466-09/102109.wmv">Lecture 17</a>: on power series, the geometric series, the exponential series, factorials and the Gamma function, Taylor series, Fourier series, the binomial theorem, the binomial coefficient, double factorials, the logarithmic series, Bernoulli numbers and polynomials, the Lerch transcendent, asymptotic series, and the exponential integrals.</li>
+                    <li>
+                        <a class="main" href="http://theory.phys.unm.edu/466-09/102609.wmv">Lecture 18</a>: on dielectrics, analytic functions, Cauchy's integral theorem, Cauchy's integral formula, the Cauchy-Riemann conditions, and harmonic functions.</li>
+                    <li>
+                        <a class="main" href="http://theory.phys.unm.edu/466-09/102809.wmv">Lecture 19</a>: on the Cauchy-Riemann conditions and the contour integral of a general function, harmonics functions, applications to two-dimensional electrostatics, Earnshaw's theorem, Taylor series, and Cauchy's inequality.</li>
+                    <li>
+                        <a class="main" href="http://theory.phys.unm.edu/466-09/110209.wmv">Lecture 20</a>: on Cauchy's inequality, Liouville's theorem, the fundamental theorem of algebra, Laurent series, poles, essential singularities, and the calculus of residues.</li>
+                    <li>Lecture 21
+                        <a class="main" href="http://theory.phys.unm.edu/466-09/110409.1.wmv">Part 1</a>&nbsp;
+                        <a class="main" href="http://theory.phys.unm.edu/466-09/110409.2.wmv">Part 2</a>: on the calculus of residues, ghost contours, third-harmonic microscopy, and several examples of the use of ghost contours.</li>
+                    <li>
+                        <a class="main" href="http://theory.phys.unm.edu/466-09/110909.wmv">Lecture 22</a>: on logarithms, cuts, roots, contour integrals around cuts, Cauchy's principal value, i-epsilon rules, and application to Feynman's propagator.
+                    </li>
+                </ul>
+
+
+                <!-- Divider -->
+
+                <hr class="damp" />
+
+                <!-- Disqus Code -->
+
+                <div id="disqus_thread"></div>
+                <script type="text/javascript">
+                    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+                    var disqus_shortname = 'physicalmathematics'; // required: replace example with your forum shortname
+
+                    /* * * DON'T EDIT BELOW THIS LINE * * */
+                    (function() {
+                        var dsq = document.createElement('script');
+                        dsq.type = 'text/javascript';
+                        dsq.async = true;
+                        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                    })();
+                </script>
+                <noscript>Please enable JavaScript to view the
+                    <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+                </noscript>
+
+
+
+            </div>
+            <!-- End of 2009 fall tab content -->
+
+
+
+            <!--    ------------------------------------------------------   -->
+
+
+
+
 
         </div>
 
-
-
-
-
-
-
-
-
-
-
     </div>
+
+
+
+
+
+
+
+
+
 
 
 
@@ -335,11 +513,24 @@
         <a id="link-top" href="#top">Top</a>
     </div>
 
-    <!--
-            <span>Built with
-            <a href="https://github.com/emptymalei/html4scientists">HTML4Scientists</a>.</span>
-		    -->
 
+
+
+    <!-- Disqus General Code -->
+
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'physicalmathematics'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var s = document.createElement('script');
+            s.async = true;
+            s.type = 'text/javascript';
+            s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+            (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+        }());
+    </script>
 
 
     <!-- Delete the following tracking code and add your own. I recommend Google Analytics.  -->
