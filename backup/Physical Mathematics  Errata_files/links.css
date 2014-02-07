@@ -1,0 +1,4 @@
+:link.main { color:#0066ff; text-decoration:underline; }
+:visited.main { color:#0066ff; text-decoration:underline; }
+:hover.main { color:gray; text-decoration:underline; }
+:link:active.main { color:red; text-decoration:underline; }

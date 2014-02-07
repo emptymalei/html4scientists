@@ -1,0 +1,13 @@
+ul
+{
+    margin:0;
+    padding-left:30px;
+}
+
+ul li 
+{
+    margin: 0px;
+    padding: 0px;
+    text-indent: -2.5em;
+    margin-left: 3.0em;
+}

@@ -29,6 +29,9 @@ body {
     color: #fff;
     line-height: 130%;
 }
+.mainmenu li a i {
+padding-right:25px;
+}
 .mainmenu li.current>a,
 .mainmenu li.current>a:hover,
 .mainmenu li.current.hover>a {
